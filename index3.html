@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Encuentra las mejores consolas y accesorios gamer a precios increíbles.">
+    <meta name="keywords" content="consolas gamer, PlayStation, Xbox, Nintendo, accesorios gamer">
+    <meta name="author" content="Consolas Gamer">
+    <title>Consolas Gamer - Tu mundo gamer</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0b0b0b;
+            color: #e8e8e8;
+            overflow-x: hidden;
+        }
+
+        /* Cabecera */
+        header {
+            background: linear-gradient(90deg, #ff7eb3, #ff758c);
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        header h1 {
+            text-align: center;
+            font-size: 4em;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin: 0;
+            animation: glow 1.5s infinite alternate;
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px #ff7eb3, 0 0 20px #ff758c, 0 0 30px #ff007b, 0 0 40px #ff007b;
+            }
+            to {
+                text-shadow: 0 0 20px #ff758c, 0 0 30px #ff007b, 0 0 50px #ff007b, 0 0 70px #ff007b;
+            }
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.5em;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        nav a:hover {
+            background-color: #ff007b;
+            transform: scale(1.1);
+        }
+
+        /* Introducción */
+        .intro {
+            height: 100vh;
+            background: url('20-fondos-de-pantalla-para-pc-gamer-04-1200x675.jpg') no-repeat center center/cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.5);
+            position: relative;
+            overflow: hidden;
+        }
+        .intro::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 1;
+        }
+        .intro h2 {
+            z-index: 2;
+            font-size: 4em;
+            animation: fade-in 2s ease;
+        }
+        .intro p {
+            z-index: 2;
+            font-size: 1.5em;
+            margin-top: 20px;
+            animation: fade-in 2s ease 0.5s;
+        }
+        .button {
+            z-index: 2;
+            margin-top: 30px;
+            padding: 15px 40px;
+            background: linear-gradient(90deg, #ff7eb3, #ff007b);
+            color: #fff;
+            font-size: 1.5em;
+            border-radius: 30px;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(255, 0, 123, 0.5);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 20px rgba(255, 0, 123, 0.7);
+        }
+
+        @keyframes fade-in {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Productos */
+        .products {
+            background: #0d1117;
+            color: #e8e8e8;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .products h2 {
+            font-size: 2.5em;
+            margin-bottom: 40px;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .product {
+            background: #161b22;
+            border-radius: 15px;
+            padding: 20px;
+            transition: transform 0.3s;
+        }
+        .product:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(255, 0, 123, 0.3);
+        }
+        .product img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .product h3 {
+            color: #ff007b;
+            margin: 20px 0 10px;
+        }
+        .product p {
+            font-size: 1.2em;
+        }
+
+        /* Footer */
+        footer {
+            background: #101418;
+            color: #e8e8e8;
+            padding: 20px;
+            text-align: center;
+            font-size: 0.9em;
+        }
+        footer a {
+            color: #ff007b;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Descripción */
+        .description {
+            background: #161b22;
+            color: #e8e8e8;
+            padding: 40px 20px;
+            text-align: left;
+        }
+        .description h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #ff007b;
+        }
+        .description ul {
+            font-size: 1.2em;
+            line-height: 1.8;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Consolas Gamer</h1>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#consolas">Consolas</a>
+            <a href="#mandos">Mandos y Juegos</a>
+            <a href="#descripciones">Descripciones</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <section class="intro" id="inicio">
+        <h2>Tu Mundo Gamer Empieza Aquí</h2>
+        <p>Descubre las mejores consolas y ofertas exclusivas en nuestra tienda.</p>
+        <a href="#consolas" class="button">Explorar ahora</a>
+    </section>
+
+    <section class="products" id="consolas">
+        <h2>Consolas Populares</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="https://i.blogs.es/15cd4e/captura_de_pantalla_2024-09-10_a_las_17.08.51/500_333.jpeg" alt="PlayStation 5">
+                <h3>PlayStation 5</h3>
+                <p>$499.99</p>
+                <a href="#" class="button">Comprar</a>
+            </div>
+            <div class="product">
+                <img src="https://m.media-amazon.com/images/I/61nq7mC0tHL.jpg" alt="Xbox Series X">
+                <h3>Xbox Series X</h3>
+                <p>$499.99</p>
+                <a href="#" class="button">Comprar</a>
+            </div>
+            <div class="product">
+                <img src="https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_85591077?x=536&y=402&format=jpg&quality=80" alt="Nintendo Switch">
+                <h3>Nintendo Switch</h3>
+                <p>$299.99</p>
+                <a href="#" class="button">Comprar</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="products" id="mandos">
+        <h2>Mandos y Juegos</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="https://m.media-amazon.com/images/I/61IG46p-yHL._AC_SL1500_.jpg" alt="Mando PS5">
+                <h3>Mando DualSense</h3>
+                <p>$69.99</p>
+                <a href="#" class="button">Comprar</a>
+            </div>
+            <div class="product">
+                <img src="https://m.media-amazon.com/images/I/7134i9rr5iL.jpg" alt="Mando Xbox">
+                <h3>Mando Xbox Wireless</h3>
+                <p>$59.99</p>
+                <a href="#" class="button">Comprar</a>
+            </div>
+            <div class="product">
+                <img src="https://m.media-amazon.com/images/I/81U-DS7w+CL._AC_UF1000,1000_QL80_.jpg" alt="Zelda">
+                <h3>The Legend of Zelda</h3>
+                <p>$59.99</p>
+                <a href="#" class="button">Comprar</a>
+            </div>
+            <div class="product">
+                <img src="https://m.media-amazon.com/images/I/61uWq5UeqvL.jpg" alt="Mando Switch Pro">
+                <h3>Mando Pro Switch</h3>
+                <p>$69.99</p>
+                <a href="#" class="button">Comprar</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="description" id="descripciones">
+        <h2>Descripción Detallada de Consolas</h2>
+        <ul>
+            <li><strong>PlayStation 5:</strong> Almacenamiento SSD ultrarrápido de 825 GB, resolución hasta 8K, retrocompatibilidad con juegos de PS4 y tecnología de ray tracing.</li>
+            <li><strong>Xbox Series X:</strong> Disco SSD de 1 TB, gráficos en 4K a 120 FPS, retrocompatibilidad completa y diseño compacto.</li>
+            <li><strong>Nintendo Switch:</strong> Pantalla táctil de 6.2 pulgadas, batería con duración de hasta 9 horas y diseño híbrido para uso portátil o en televisor.</li>
+        </ul>
+    </section>
+
+    <footer id="contacto">
+        <p>&copy; 2024 Consolas Gamer - Todos los derechos reservados</p>
+        <p>Síguenos en: <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a></p>
+    </footer>
+
+</body>
+</html>
